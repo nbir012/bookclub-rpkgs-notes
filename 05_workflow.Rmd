@@ -1,0 +1,50 @@
+# Chapter 5 - Fundamental development workflows {#Chap5}
+
+This chapter discusses the basic workflow of developing an R package.
+
+## survey the existing landscape
+
+Is your idea package worthy? Why do you want to create a package?
+
+Appreciating two payoffs can help in answering these questions:
+1) Product - this package will make your/others lives easier/better
+2) Process - Getting a greater appreciation and mastery of R
+
+By understanding the existing landscape you can get an appreciation of any common conventions that might be in a community, any existing packages that may already do what you want. If your package is in a well defined domain, ensuring you fit within conventions can help uptake and compatability with other packages/ecosystems (e.g. tidymodels).
+
+## naming your package
+Its hard!
+
+Three formal requirements:
+1) Can only have letters, numbers and fullstops
+2) It must start with a letter
+3) It can't end with a full stop
+
+No hyphens, underscores. It is best to avoid having a fullstop if possible.
+Tips:
+* Pick a unique name that is easy to google
+* don't use an existing R/bioconductor name - check github for anything that may be in development
+* avoid using both upper and lower case letters
+* lean towards pronounceable names
+* Find a word that evokes a problem and modify it to be unique
+* use abbreviations
+* add an extra R
+* don't get sued:
+** rDrop isn’t called rDropbox because Dropbox prohibits any applications from using the full trademarked name
+
+available package
+The available package can help evaluate a particular name
+
+## Package creation
+
+There are two ways to create a package.
+* call `usethis::create_package`
+* in RStudio, do File > New Project > New Directory > R Package (this actually just calls usethis anyway)
+
+This produces the minimum viable package structure with the following components:
+1) An `R/` directory
+2) A basic `DESCRIPTION` file
+3) A basic `NAMESPACE` file
+
+It can also include an Rstudio project file, pkgname.Rproj 
+

@@ -1,0 +1,10 @@
+# Chapter 3 - System Setup {#Chap3}
+
+This chapter covers the system requirements & packages needed to develop a package as outlined in the `rpkgs` book.
+
+The following packages are used.
+```{r eval=FALSE}
+install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
+```
+
+`devtools` was a large package that has been split into a series of smaller packages (e.g. usethis) with some functions still remaining within `devtools`. After 
